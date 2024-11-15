@@ -1,32 +1,6 @@
 # Generic CMake template.
 
-This repository represents a generic CMake template for CPP and C programs and libraries.
-
-## Programs
-
-To build programs, create a subfolder in the `./src/programs/` folder. The name of this subfolder represents the executable name.
-
-All h files in the `include` subfolder and all `c` and `cpp` files in the program folder are added as project dependencies and are watched for changes.
-
-## Libraries
-
-To build libraries, create a subfolder in the `/src/llibraries/` folder. The name of this subfolder represents the library name.
-
-All h files in the `include` subfolder and all `c` and `cpp` files in the program folder are added as project dependencies and are watched for changes.
-
-## Dependency management
-
-To manage dependencies in the program and library folders, you have to create a deps.txt file can be created. The dependencies should be added line by line.
-
-If a line matches the exact name of a library within the same project, this library is used as dependency and include path is added. Otherwise, the CMake capability is used to find the library within your system and is added as an external dependency.
-
-## Tests
-
-This template also supports testing. At the moment, there are to type of supported tests.
-
-### Criterion
-
-If you create a subfolder in `tests/criterion/` the files in there are build to a criterion test. These tests are automatically linked to the `libCriterion` library, which must be existent in your system. Dependency handling is done in the same way as it is done for regular programs and libraries.
+Aufgabe 
 
 ### IO-Tests.  
 
